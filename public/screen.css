@@ -6,4 +6,92 @@ body {
   margin: 0;
   min-height: 100%;
   font: 16px / 1 sans-serif;
+  display: flex;
+  flex-direction: column;
 }
+
+body>* {
+  flex-grow: 1;
+}
+
+body section, body footer {
+  border: 2px solid black;
+}
+
+body section section, body footer section {
+  border: 2px solid red;
+}
+
+/* Start hero styles here. */
+
+.portfolio-hero {
+  flex-basis: 150px;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.me-info {
+  flex-basis: 50px;
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.me-photo {
+  flex-basis: 100px;
+  height: 100px;
+}
+
+.me-text {
+  flex-basis: 150px;
+  height: 50px;
+}
+
+.portfolio-projects {
+  flex-basis: 25px;
+  flex-grow: 1;
+  display: flex;
+}
+
+.portfolio-item {
+  flex-basis: 20px;
+  flex-grow: 1;
+}
+
+/* Start blog styles here */
+.blogs {
+  flex-basis: 50px;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.blog-1, .blog-2 {
+  flex-basis: 25px;
+  flex-grow: 1;
+  max-height: 80px;
+
+}
+
+/* Start footer styles here */
+
+.footer {
+  flex-basis: 50px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social {
+  flex-basis: 70px;
+}
+
+.attribution {
+  flex-basis: 30px;
+}
+
+
