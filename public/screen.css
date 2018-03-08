@@ -29,14 +29,14 @@ body section section, body footer section {
 /* Start hero styles here. */
 
 .portfolio-hero {
-  flex-basis: 200px;
+  flex-basis: 450px;
   flex-grow: 2;
   display: flex;
   flex-direction: column;
 }
 
 .me-info {
-  flex-basis: 50px;
+  flex-basis: 250px;
   flex-grow: 2;
   display: flex;
   justify-content: center;
@@ -44,38 +44,68 @@ body section section, body footer section {
 }
 
 .me-container {
-  flex-basis: 80%;
-  height: 100px;
+  flex-basis: 90%;
+  height: 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .me-photo {
-  flex-basis: 100px;
-  height: 86px;
+  flex-basis: 120px;
+  height: 120px;
   align-self: flex-end;
+  display: flex;
+  justify-content: center;
+}
+
+.me-photo img{
+  max-height: 100%;
 }
 
 .me-text {
+  box-sizing: border-box;
+  padding: 10px;
   flex-basis: 150px;
-  height: 50px;
+  height: 180px;
+}
+
+.me-text h2 {
+  margin: .5em 0;
 }
 
 .portfolio-projects {
-  flex-basis: 25px;
+  flex-basis: 180px;
   flex-grow: 1;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-item {
-  flex-basis: 20px;
+  flex-basis: 150px;
   flex-grow: 1;
   margin: 4px;
+  background-size: cover;
+}
+
+.img-01 {
+  background-image: url("./assets/images/one-list.png");
+}
+
+.img-02 {
+  background-image: url("./assets/images/bomb-sniffer.png");
+}
+
+.img-03 {
+  background-image: url("./assets/images/make-it-rain.png");
+}
+
+.img-04 {
+  background-image: url("./assets/images/sensei-sense.png");
 }
 
 /* Start blog styles here */
 .blogs {
-  flex-basis: 100px;
+  flex-basis: 300px;
   flex-grow: 2;
   display: flex;
   flex-direction: column;
@@ -86,7 +116,7 @@ body section section, body footer section {
 .blog-1, .blog-2 {
   flex-basis: 25px;
   flex-grow: 1;
-  max-height: 80px;
+  max-height: 140px;
   border-radius: 4px;
 }
 
@@ -233,6 +263,7 @@ body section section, body footer section {
 
   .blogs {
     flex-basis: 300px;
+    padding: 1% 15%;
   }
 
   .blog-1, .blog-2 {
