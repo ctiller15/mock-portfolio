@@ -389,6 +389,11 @@ body section section, body footer section {
     height: 100px;
   }
 
+  .me-text:after {
+    right: 45%;
+    top: 18%;
+  }
+
   .portfolio-projects {
     flex-basis: 140px;
     padding: 0 250px;
