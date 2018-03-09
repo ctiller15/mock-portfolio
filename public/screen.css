@@ -68,12 +68,24 @@ body section section, body footer section {
   border-radius: 4px;
 }
 
+.me-text::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 40px solid rgba(208, 212, 213, 1);
+  border-bottom: 10px solid transparent;
+  right: 48%;
+  transform: skew(0deg, -50deg);
+}
+
 .me-text {
   box-sizing: border-box;
   padding: 10px;
   flex-basis: 150px;
   max-height: 160px;
-  background: rgba(208, 212, 213, .9);
+  background: rgba(208, 212, 213, 1);
   border-radius: 5px;
 }
 
@@ -280,6 +292,14 @@ body section section, body footer section {
     flex-basis: 250px;
     max-height: 120px;
   }
+
+  .me-text::after {
+    border-top: 60px solid rgba(208, 212, 213, 1);
+    border-right: 100px solid transparent;
+    right: 40%;
+    top: 16%;
+    transform: skew(-50deg, 0deg);
+  }
   
   .portfolio-item {
     background-position: center center;
@@ -318,6 +338,12 @@ body section section, body footer section {
   .me-text {
     flex-basis: 320px;
     height: 120px;
+  }
+
+  .me-text::after {
+    right: 42%;
+    top: 12%;
+    transform: skew(-60deg, 0deg);
   }
 
   .blog-1, .blog-2 {
