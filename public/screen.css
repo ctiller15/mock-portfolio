@@ -25,7 +25,7 @@ body section, body footer {
 }
 
 body section section, body footer section {
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 /* Start hero styles here. */
@@ -36,6 +36,8 @@ body section section, body footer section {
   display: flex;
   flex-direction: column;
   background: url("./assets/backgrounds/space.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .me-info {
@@ -227,6 +229,31 @@ body section section, body footer section {
   max-width: 100%;
 }
 
+.social-icon:nth-child(1) {
+  background: url("./assets/images/twitter.png") center center;
+  background-size: cover;
+}
+
+.social-icon:nth-child(2) {
+  background: url("./assets/images/github_logo_large_round.png") center center;
+  background-size: 110px 110px;
+}
+
+.social-icon:nth-child(3) {
+  background: url("./assets/images/facebook_icon.png") center center;
+  background-size: cover;  
+}
+
+.social-icon:nth-child(4) {
+  background: url("./assets/images/slack_alt.png"), white center center;
+  background-size: cover;  
+}
+
+.social-icon:nth-child(5) {
+  background: url("./assets/images/linkedIn.png"), white center center;
+  background-size: cover;  
+}
+
 .attribution {
   flex-basis: 30px;
   font-size: 12px;
@@ -337,7 +364,7 @@ body section section, body footer section {
   }
 
   .portfolio-projects {
-    flex-basis: 60px;
+    flex-basis: 140px;
     padding: 0 250px;
   }
 
@@ -356,5 +383,9 @@ body section section, body footer section {
 
   .social {
     flex-basis: unset;
+  }
+
+  .icons {
+    padding: 0 30%;
   }
 }
