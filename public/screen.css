@@ -111,6 +111,7 @@ body section section, body footer section {
   margin: 4px;
   background-size: cover;
   border-radius: 6px;
+
 }
 
 .img-01 {
@@ -139,6 +140,14 @@ body section section, body footer section {
   padding: 4px;
 }
 
+.blogs > * {
+  background: white;
+}
+
+.blogs > *:hover{
+  opacity: .5;
+}
+
 .blog-1, .blog-2 {
   flex-basis: 25px;
   flex-grow: 1;
@@ -147,6 +156,7 @@ body section section, body footer section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  overflow: hidden;
 }
 
 .blog-1 {
@@ -229,41 +239,48 @@ body section section, body footer section {
   align-items: center;
 }
 
-.social-icon {
+.icon-bg {
   /* border: 3px solid green; */
   border-radius: 1000px;
   flex-basis: 50px;
   height: 50px;
   overflow: hidden;
+  background: white;
+}
+
+.social-icon {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 
 .social-icon img {
   max-width: 100%;
 }
 
-.social-icon:nth-child(1) {
-  background: url("./assets/images/twitter.png") center center;
-  background-size: cover;
+.social-icon:hover {
+  opacity: .7;
 }
 
-.social-icon:nth-child(2) {
-  background: url("./assets/images/github_logo_large_round.png") center center;
-  background-size: 110px 110px;
+.social-icon.twitter {
+
+  background: url("./assets/images/twitter.png") center center /cover;
 }
 
-.social-icon:nth-child(3) {
-  background: url("./assets/images/facebook_icon.png") center center;
-  background-size: cover;  
+.social-icon.github {
+  background: url("./assets/images/github_logo_large_round.png") center center /cover;
 }
 
-.social-icon:nth-child(4) {
-  background: url("./assets/images/slack_alt.png"), white center center;
-  background-size: cover;  
+.social-icon.facebook {
+  background: url("./assets/images/facebook_icon.png") center center /cover;
 }
 
-.social-icon:nth-child(5) {
-  background: url("./assets/images/linkedIn.png"), white center center;
-  background-size: cover;  
+.social-icon.slack {
+  background: url("./assets/images/slack_alt.png") center center /cover, white; 
+}
+
+.social-icon.linkedin {
+  background: url("./assets/images/linkedIn.png") center center /cover, white;
 }
 
 .attribution {
@@ -320,7 +337,7 @@ body section section, body footer section {
     padding: 0 120px;
   }
 
-  .social-icon {
+  .icon-bg {
     flex-basis: 70px;
     height: 70px;
   }
@@ -363,7 +380,7 @@ body section section, body footer section {
     margin: 16px 0;
   }
 
-  .social-icon {
+  .icon-bg {
     flex-basis: 90px;
     height: 90px;
   }
