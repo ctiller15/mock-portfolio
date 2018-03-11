@@ -24,13 +24,15 @@ body *{
 
 .portfolio-hero {
   flex: 2 0 450px;
+  background: url("./assets/backgrounds/space.png") center no-repeat /cover;
+
   display: flex;
   flex-direction: column;
-  background: url("./assets/backgrounds/space.png") center no-repeat /cover;
 }
 
 .me-info {
   flex: 2 0 250px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +41,7 @@ body *{
 .me-container {
   flex-basis: 90%;
   height: 200px;
+
   display: flex;
   justify-content: space-around;
 }
@@ -47,6 +50,7 @@ body *{
   flex-basis: 120px;
   height: 120px;
   align-self: flex-end;
+
   display: flex;
   justify-content: center;
 }
@@ -56,24 +60,26 @@ body *{
   border-radius: 4px;
 }
 
+/* Used to create the little triangle on the speech bubble */
 .me-text::after {
   position: relative;
   display: inline-block;
+
   content: "";
   width: 0;
   height: 0;
+  right: 32%;
   border-top: 20px solid transparent;
   border-right: 40px solid rgba(208, 212, 213, 1);
-  right: 32%;
   transform: skew(0deg, -30deg);
 }
 
 .me-text {
   box-sizing: border-box;
-  padding: 10px;
+  background: rgba(208, 212, 213, 1);
   flex-basis: 150px;
   max-height: 160px;
-  background: rgba(208, 212, 213, 1);
+  padding: 10px;
   border-radius: 5px;
 }
 
@@ -86,24 +92,26 @@ body *{
 }
 
 .portfolio-projects {
+  background: rgba(23, 34, 36, .8);
   flex: 1 0 180px;
+
   display: flex;
   flex-wrap: wrap;
-  background: rgba(23, 34, 36, .8);
 }
 
 .portfolio-link {
+  background: white;
   flex: 1 0 150px;
-  display: flex;
   margin: 4px;
   padding: 0;
-  background: white;
   border-radius: 6px;
+
+  display: flex;
 }
 
 .portfolio-item {
-  flex: 1 0 150px;
   background-size: cover;
+  flex: 1 0 150px;
   border-radius: 6px;
   transition: opacity .3s;
 }
@@ -131,16 +139,18 @@ body *{
 /* Start blog styles here */
 .blogs {
   flex: 2 0 300px;
+  padding: 4px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 4px;
 }
 
 .blog-link-body {
   background: white;
-  text-decoration: none;
   color: inherit;
+
+  text-decoration: none;
 }
 
 .blog-link-body > * {
@@ -155,10 +165,11 @@ body *{
   flex: 1 0 25px;
   max-height: 140px;
   border-radius: 4px;
+  overflow: hidden;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  overflow: hidden;
 }
 
 .blog-1 {
@@ -170,13 +181,14 @@ body *{
 }
 
 .preview-content {
+  background: white;
   flex: 1 0 50px;
   max-height: 80px;
-  background: white;
+  padding: 16px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 16px;
 }
 
 .blog-header {
@@ -205,23 +217,25 @@ body *{
 /* Start footer styles here */
 
 .footer {
+  color: #F6F5F5;
   flex: 1 0 120px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #F6F5F5;
 }
 
 .social {
   flex: 1 0 86px;
   max-height: 200px;
+
   display: flex;
   flex-direction: column;
 }
 
 .social-message {
-  text-align: center;
   margin: 8px 0;
+  text-align: center;
   font-weight: bold;
 }
 
@@ -232,17 +246,17 @@ body *{
 }
 
 .icon-bg {
-  border-radius: 1000px;
+  background: white;
   flex-basis: 50px;
   height: 50px;
+  border-radius: 1000px;
   overflow: hidden;
-  background: white;
 }
 
 .social-icon {
+  background-size: cover;
   width: 100%;
   height: 100%;
-  background-size: cover;
   transition: opacity .3s;
 }
 
@@ -277,6 +291,7 @@ body *{
 .attribution {
   flex-basis: 30px;
   font-size: 12px;
+
   display: flex;
   justify-content: center;
 }
@@ -285,6 +300,7 @@ body *{
   text-align: center;
 }
 
+/* Targeting small tablets. */
 @media screen and (min-width: 768px) {
   .me-container {
     flex-basis: 60%;
@@ -292,8 +308,8 @@ body *{
   }
 
   .me-photo {
-    height: 80%;
     flex-basis: 160px;
+    height: 80%;
   }
 
   .me-text {
@@ -310,8 +326,8 @@ body *{
   }
 
   .blog-1, .blog-2, .blog-link-body {
-    max-height: 140px;
     background-position: 50% 65%;
+    max-height: 140px;
   }
 
   .preview-content {
@@ -376,14 +392,14 @@ body *{
   }
 
   .me-container {
-    height: 200px;
     flex-basis: 50%;
+    height: 200px;
     justify-content: space-around;
   }
 
   .me-photo {
-    height: 90%;
     flex-basis: 180px;
+    height: 90%;
   }
 
   .me-text {
