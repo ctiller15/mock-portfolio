@@ -69,15 +69,26 @@ body section section, body footer section {
 }
 
 .me-text::after {
-  position: absolute;
+  position: relative;
+  display: inline-block;
   content: "";
-  width: 0;
+  /* width: 0;
   height: 0;
   border-top: 15px solid transparent;
   border-right: 40px solid rgba(208, 212, 213, 1);
   border-bottom: 10px solid transparent;
   right: 48%;
-  transform: skew(0deg, -50deg);
+  transform: skew(0deg, -50deg); */
+  position: relative;
+  display: inline-block;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 40px solid rgba(208, 212, 213, 1);
+  /* border-bottom: 10px solid transparent; */
+  right: 32%;
+  transform: skew(0deg, -30deg);
 }
 
 .me-text {
@@ -333,11 +344,7 @@ body section section, body footer section {
   }
 
   .me-text::after {
-    border-top: 60px solid rgba(208, 212, 213, 1);
-    border-right: 100px solid transparent;
-    right: 40%;
-    top: 16%;
-    transform: skew(-50deg, 0deg);
+    right: 20%;
   }
   
   .portfolio-item {
@@ -380,9 +387,7 @@ body section section, body footer section {
   }
 
   .me-text::after {
-    right: 42%;
-    top: 12%;
-    transform: skew(-60deg, 0deg);
+    right: 15%;
   }
 
   .blog-1, .blog-2, .blog-link-body {
@@ -428,11 +433,6 @@ body section section, body footer section {
     height: 100px;
   }
 
-  .me-text:after {
-    right: 45%;
-    top: 18%;
-  }
-
   .portfolio-projects {
     flex-basis: 140px;
     padding: 0 250px;
@@ -440,7 +440,7 @@ body section section, body footer section {
 
   .blogs {
     flex-basis: 300px;
-    padding: 1% 15%;
+    padding: 1% 254px;
   }
 
   .blog-1, .blog-2, .blog-link-body {
